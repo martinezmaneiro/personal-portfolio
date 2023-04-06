@@ -10,6 +10,28 @@
     <title>My Portfolio</title>
 </head>
 <body>
+    <div class="toggle" onclick=toggleMenu()></div>
+    <section class="banner" id="home">
+        <div class="imgSidebar">
+            <img src="./assets/profile.webp" alt="my-photo">
+        </div>
+        <div class="content-box">
+            <h5 class="logoText">My Portfolio</h5>
+            <div>
+                <h4><span>Hello</span>I'm</h4>
+                <h2>Joaquin Martinez</h2>
+                <h4>Front End Developer</h4>
+                <p>DESCRIPTION</p>
+                <a href="#" class="button">About Me</a>
+            </div>
+        </div>
+    </section>
     <div class="toggle"></div>
+    <script>
+        function toggleMenu(){
+            const menuToggle = document.querySelector('.toggle');
+            menuToggle.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
