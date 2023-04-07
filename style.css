@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 .toggle {
     position: fixed;
@@ -19,9 +20,9 @@
     cursor: pointer;
     z-index: 1000;
 }
-.toggle.actve {
+.toggle.active {
     background: #000 url(./assets/close.webp);
-    background-size: 25px;
+    background-size: 30px;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -49,7 +50,7 @@ section {
     height: 100%;
     object-fit: cover;
 }
-.banner .contentBox .sidebar{
+.banner .contentBox, .sidebar {
     position: absolute;
     top: 0;
     right: 0;
@@ -59,6 +60,10 @@ section {
     justify-content: center;
     align-items: center;
     padding: 100px;
+}
+.banner .contentBox div {
+    position: absolute;
+    left: 100px;
 }
 .logoText {
     position: absolute;
@@ -156,4 +161,56 @@ p {
 .sci li img:hover{
     transform: scale(2);
     opacity: 1;
+}
+.title {
+    width: 100%;
+    text-align: center;
+}
+.title h2 {
+    position: relative;
+    color: #00bcd4;
+    font-size: 1.8em;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.title p {
+    max-width: 700px;
+    display: inline-block;
+}
+.title h2::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px;
+    width: 60px;
+    height: 4px;
+    background: #000;
+}
+.title.white h2, .title.white p {
+    color: #fff;
+}
+.title.white h2::before {
+    background: #fff;
+}
+.about {
+    background: #000;
+}
+.about .content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.about .content .textBox {
+    min-width: 49%;
+    width: 49%;
+}
+.about .content .textBox p {
+    color: #fff;
+}
+.about .content .imgBox {
+    margin-left: 40px;
+}
+.about .content .imgBox img {
+    max-width: 100%;
 }

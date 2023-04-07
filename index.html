@@ -10,7 +10,7 @@
     <title>My Portfolio</title>
 </head>
 <body>
-    <div class="toggle" onclick='toggleMenu()'></div>
+    <div class="toggle" onclick="toggleMenu();"></div>
     <section class="banner" id="home">
         <div class="imgSidebar">
             <img src="./assets/profile.webp" alt="my-photo">
@@ -30,11 +30,30 @@
             </ul>
         </div>
     </section>
+    <section class="about" id="about">
+        <div class="title white">
+            <h2>Aasdasd</h2>
+            <p>asfasf</p>
+        </div>
+        <div class="content">
+            <div class="textBox">
+                <p>asfgasgasdgasdgasdg</p>
+            </div>
+            <div class="imgBox">
+                <!--<img/>-->
+            </div>
+        </div>
+    </section>
+    <section class="technologies" id="technologies">
+        <div class="title">
+            <h2>Aasdasd</h2>
+            <p>asfasv cv cxvcx zzxf</p>
+    </section>
     <div class="sidebar">
         <ul class="menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Technologies</a></li>
+            <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#technologies" onclick="toggleMenu()">Technologies</a></li>
             <li><a href="#">Projects</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
