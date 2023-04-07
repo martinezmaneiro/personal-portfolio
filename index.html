@@ -24,6 +24,10 @@
                 <p>DESCRIPTION</p>
                 <a href="#" class="button">About Me</a>
             </div>
+            <ul class="sci">
+                <li><a href="#"><img src="./assets/linkedIn.webp" alt="linkedIn"></a></li>
+                <li><a href="#"><img src="./assets/github.webp" alt="github"/></a></li>
+            </ul>
         </div>
     </section>
     <div class="sidebar">
@@ -38,7 +42,9 @@
     <script>
         function toggleMenu(){
             const menuToggle = document.querySelector('.toggle');
+            const sidebar = document.querySelector('.sidebar');
             menuToggle.classList.toggle('active');
+            sidebar.classList.toggle('active');
         }
     </script>
 </body>
