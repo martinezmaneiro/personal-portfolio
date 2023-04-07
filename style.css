@@ -340,7 +340,7 @@ p {
         left: 40px;
     }
     .toggle {
-        left: 40px;
+        right: 40px;
     }
     .sidebar {
         display: none;
@@ -388,5 +388,21 @@ p {
     .projects .content .projectBox .imgBox img {
         width: 100%;
         height: 100%;
+    }
+}
+@media (max-width: 500px) {
+    .projects .content .projectBox {
+        padding: 10px 10px;
+        max-width: 280px;
+        margin: 10px;
+    }
+    .banner .contentBox div {
+        left: 20px;
+    }
+    .banner .contentBox {
+        padding: 5px;
+    }
+    .banner .imgSidebar {
+        width: fit-content;
     }
 }
