@@ -104,6 +104,7 @@ p {
     text-decoration: none;
     font-weight: 500;
     letter-spacing: 2px;
+    margin-top: 40px;
 }
 .sidebar {
     position: fixed;
@@ -189,30 +190,21 @@ p {
 }
 .title.white h2, .title.white p {
     color: #fff;
+    margin-bottom: 100px;
+}
+.title.white p {
+    text-align: justify;
+    line-height: 1.6;
 }
 .title.white h2::before {
     background: #fff;
 }
 .about {
     background: #000;
-}
-.about .content {
     display: flex;
-    justify-content: space-between;
-    margin-top: 40px;
-}
-.about .content .textBox {
-    min-width: 49%;
-    width: 49%;
-}
-.about .content .textBox p {
-    color: #fff;
-}
-.about .content .imgBox {
-    margin-left: 40px;
-}
-.about .content .imgBox img {
-    max-width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .technologies {
     display: flex;
