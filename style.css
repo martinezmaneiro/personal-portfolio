@@ -32,7 +32,7 @@ section {
 }
 .banner {
     position: relative;
-    width: 100%;
+    width: 100vw;
     min-height: 100vh;
 }
 .banner .imgSidebar {
@@ -311,4 +311,82 @@ p {
     align-items: center;
     justify-content: center;
     margin-top: 200px;
+}
+@media (max-width: 991px) {
+
+    .banner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .banner .contentBox, .sidebar {
+        position: relative;
+        width: 100%;
+    }
+    .banner .imgSidebar {
+        position: absolute;
+    }
+    .banner .imgSidebar img {
+        top: 15%;
+        left: 70px;
+        width: 200px;
+        height: 200px;
+    }
+    .banner .contentBox {
+        position: absolute;
+    }
+    .logoText {
+        left: 40px;
+    }
+    .toggle {
+        left: 40px;
+    }
+    .sidebar {
+        display: none;
+    }
+    .sci {
+        left: 40px;
+    }
+    section {
+        padding: 40px;
+    }
+    .projects .content .projectBox {
+        padding: 30px 20px;
+        max-width: 340px;
+        margin: 10px;
+    }
+    .greeting {
+        margin-top: 150px;
+    }
+    .technologies .content {
+        width: fit-content;
+    }
+    .technologies .content .techBox {
+        padding: 10px 5px;
+        height: 80px;
+        width: 80px;
+        margin: 10px;
+    }
+    .technologies .content .techBox img {
+        max-width: 40px;
+    }
+    .technologies .content .techBox h2 {
+        margin-top: 20px;
+        font-size: 14px;
+        font-weight: 300;
+    }
+    .projects .content {
+        width: 100vw;
+    }
+    .projects .content .projectBox {
+        position: relative;
+        width: 150px;
+        height: 150px;
+        margin: 10px;
+    }
+    .projects .content .projectBox .imgBox img {
+        width: 100%;
+        height: 100%;
+    }
 }
