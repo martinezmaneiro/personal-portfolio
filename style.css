@@ -250,3 +250,64 @@ p {
     font-weight: 600;
     transform: 0.5s;
 }
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.projects .content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 1200px;
+}
+.projects .content .projectBox {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    transition: 0.5s;
+    text-align: center;
+}
+.projects .content .projectBox .imgBox,
+.projects .content .projectBox .textBox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+.projects .content .projectBox .imgBox img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.projects .content .projectBox .textBox {
+    background-color: #000;
+    opacity: 0;
+    transition: 0.5s;
+}
+.projects .content .projectBox:hover .textBox {
+    opacity: 1;
+}
+.projects .content .projectBox .textBox h3 {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1em;
+}
+.projects .content .projectBox .textBox p {
+    color: #fff;
+    font-size: 1em;
+}
